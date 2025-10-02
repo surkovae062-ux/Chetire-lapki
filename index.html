@@ -1,98 +1,193 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Четыре Лапки: Пушистые Сердца 🐾❤️</title>
-<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB6C1;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.phone {
+    color: #fff;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #87CEEB;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h2 {
+    margin-top: 0;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFB6C1;
+    color: #fff;
+}
+</style>
 </head>
 <body>
 
 <header>
-  <h1 class="logo">🐾 Четыре Лапки 🐾</h1>
-  <div class="top-right">
-    <a href="tel:+89362994600" class="phone">📞 8 936 299 46 00</a>
-  </div>
-  <nav>
-      <ul>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#prices">Цены</a></li>
-          <li><a href="#gallery">Галерея</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#form">Заявка</a></li>
-      </ul>
-  </nav>
+    <h1 class="logo">🐾 Четыре Лапки 🐾</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#prices">Цены</a></li>
+            <li><a href="#grid-gallery">Галерея</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#form">Заявка</a></li>
+        </ul>
+    </nav>
+    <div class="phone"><a href="tel:89362994600" style="color:white; text-decoration:none;">📞 8 936 299 46 00</a></div>
 </header>
 
 <section id="hero">
-<h2>Наши любимцы 🐶🐱🐰</h2>
-<div class="hero-gallery">
-  <div class="hero-item">
-    <img src="images/sobachka_u_kompa.jpg" alt="Собачка у компа">
-    <p>Собачка у компа</p>
-  </div>
-  <div class="hero-item">
-    <img src="images/sobachka_bezhit.jpg" alt="Собачка бежит">
-    <p>Собачка бежит</p>
-  </div>
-  <div class="hero-item">
-    <img src="images/sobachka_u_volera.jpg" alt="Собачка у вольера">
-    <p>Собачка у вольера</p>
-  </div>
-  <div class="hero-item">
-    <img src="images/kot_podachi.jpg" alt="Кот Подачи">
-    <p>Кот Подачи</p>
-  </div>
-  <div class="hero-item">
-    <img src="images/ovcharka.jpg" alt="Овчарка">
-    <p>Овчарка</p>
-  </div>
-  <div class="hero-item">
-    <img src="images/ovcharka_s_kotom.jpg" alt="Овчарка с котом">
-    <p>Овчарка с котом</p>
-  </div>
+    <div class="hero-text">
+        <h2>Отпуск для вашего любимца! 🏖️🐶🐱</h2>
+        <p>Почему ваш питомец не может отдохнуть в нашем уютном приюте, пока вы в отпуске? 🌲🐾</p>
+        <a href="#form" class="btn">Забронировать место ❤️</a>
+    </div>
+</section>
+
+<section id="about">
+<h2>О нас 🌟</h2>
+<p>Уважаемые владельцы домашних животных! Планируете отпуск, но не знаете, куда оставить своего пушистого друга? 🐾 Не переживайте! Мы рады предложить вашему любимцу отдых в нашем уютном приюте.</p>
+
+<ul>
+<li>💖 <strong>Комфорт и безопасность:</strong> Проживание в просторных вольерах, уют и забота.</li>
+<li>🍲 <strong>Питание на высшем уровне:</strong> Сбалансированное питание с учётом индивидуальных предпочтений.</li>
+<li>🚶‍♂️ <strong>Активные прогулки:</strong> Ежедневные прогулки по живописным маршрутам.</li>
+<li>🩺 <strong>Профессиональный уход:</strong> Опытные специалисты, регулярная проверка здоровья.</li>
+<li>🎉 <strong>Развлекательные мероприятия:</strong> Игры, конкурсы, тематические праздники.</li>
+<li>🧡 <strong>Индивидуальный подход:</strong> Фотоотчёты, выгул, кормление по графику, уход за шерстью и когтями, приём лекарств, социализация.</li>
+<li>📸 <strong>Фотоотчёты для хозяев:</strong> Всегда в курсе жизни питомца.</li>
+</ul>
+</section>
+
+<section id="prices">
+<h2>Цены 💰</h2>
+<ul>
+<li>🐹 Мелкие животные: 300–800 ₽/сутки</li>
+<li>🐱 Кошки: 649–1 299 ₽/сутки</li>
+<li>🐕 Мелкие собаки: 849–1 299 ₽/сутки</li>
+<li>🐕‍🦺 Средние/крупные собаки: 1 299–2 000 ₽/сутки</li>
+<li>🦎 Экзоты: 1 000–2 500 ₽/сутки</li>
+<li>🏡 Пожизненное содержание: от 70 000 ₽</li>
+</ul>
+<p>💡 Дополнительно: фотоотчёты, выгул, уход за шерстью и когтями, приём лекарств, социализация.</p>
+</section>
+
+<section id="grid-gallery">
+<h2>Галерея 📸</h2>
+<div class="gallery-grid">
+<img src="https://github.com/user-attachments/assets/096b4d0d-7fd2-47f3-83b5-56a2e06faffc" alt="Собачка у компа">
+<img src="https://github.com/user-attachments/assets/79911036-4dbb-4768-87d6-1ec7594c46d4" alt="Собачка бежит">
+<img src="https://github.com/user-attachments/assets/2dab1ae0-f745-4b3c-99e5-110710ce47ae" alt="Собачка у вольера">
+<img src="https://github.com/user-attachments/assets/a6aa8cbb-aa65-490f-8f2f-cf5269482619" alt="Кот">
+<img src="https://github.com/user-attachments/assets/5da5ed90-8e3e-4d69-8d0c-c05e10d5fa86" alt="Овчарка">
+<img src="https://github.com/user-attachments/assets/18b5762c-efc2-485f-9f13-e543a524bc7f" alt="Овчарка с котом">
+<img src="https://github.com/user-attachments/assets/6992dbd3-1b02-4c49-82d9-7b4e20c0d536" alt="Щенок">
+<img src="https://github.com/user-attachments/assets/7d9b9514-2589-4a87-a6d5-5af6e7c526bc" alt="Кролик">
+<img src="https://github.com/user-attachments/assets/d3a1a257-000c-45e5-b830-66cb29777eef" alt="Счастливый котёнок">
 </div>
 </section>
 
-<section id="gallery">
-<h2>Галерея 📸</h2>
-<div class="gallery-grid">
-  <div class="gallery-item">
-    <img src="images/dacha.jpg" alt="Дача">
-    <p>Дача</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/gonshchik.jpg" alt="Гонщик">
-    <p>Гонщик</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/ovcharka2.jpg" alt="Овчарка">
-    <p>Овчарка</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/simboy.jpg" alt="Симбой">
-    <p>Симбой</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/bonya.jpg" alt="Боня">
-    <p>Боня</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/bonya2.jpg" alt="Боня 2">
-    <p>Боня 2</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/gonshchik2.jpg" alt="Гонщик 2">
-    <p>Гонщик 2</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/krolik.jpg" alt="Кролик">
-    <p>Кролик</p>
-  </div>
-  <div class="gallery-item">
-    <img src="images/schastliviy_kotenok.jpg" alt="Счастливый котёнок">
-    <p>Счастливый котёнок</p>
-  </div>
+<section id="reviews">
+<h2>Отзывы 🌟</h2>
+<div class="reviews">
+<blockquote>🐾 "Замечательный приют! Моя собака счастлива и получает массу внимания!" – Анна</blockquote>
+<blockquote>🐾 "Лучшее место для моего кота, всегда присылают милые фотоотчёты!" – Сергей</blockquote>
+<blockquote>🐾 "Очень довольна заботой и вниманием к питомцу." – Марина</blockquote>
+<blockquote>🐾 "Пушистый друг счастлив, как на курорте!" – Дмитрий</blockquote>
 </div>
 </section>
 
@@ -101,17 +196,4 @@
 <form action="https://formspree.io/f/mrbykzqp" method="POST">
 <input type="text" name="name" placeholder="Имя владельца" required>
 <input type="email" name="email" placeholder="Email" required>
-<input type="tel" name="phone" placeholder="Номер телефона" required>
-<input type="text" name="pet" placeholder="Вид и порода животного" required>
-<input type="text" name="dates" placeholder="Даты передержки" required>
-<textarea name="message" placeholder="Особые пожелания"></textarea>
-<button type="submit">Отправить 🐾</button>
-</form>
-</section>
-
-<footer>
-<p>📍 Одинцовский район, СНТ Фортуна | Четыре Лапки 🐾❤️</p>
-</footer>
-
-</body>
-</html>
+<input type="tel" name="phone" placeholder="Телефон
