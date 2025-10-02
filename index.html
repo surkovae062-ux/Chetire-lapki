@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -8,24 +7,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-https://formspree.io/f/mrbykzqp
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mrbykzqp"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-https://chatgpt.com/share/68dbb027-aea4-8002-819f-5572be119b85
+
 <header>
     <h1 class="logo">🐾 Четыре Лапки 🐾</h1>
     <nav>
@@ -98,13 +80,23 @@ https://chatgpt.com/share/68dbb027-aea4-8002-819f-5572be119b85
 
 <section id="form">
 <h2>Заявка на передержку 📝</h2>
-<form>
-<input type="text" placeholder="Имя владельца" required>
-<input type="email" placeholder="Email" required>
-<input type="text" placeholder="Вид и порода животного" required>
-<input type="text" placeholder="Даты передержки" required>
-<textarea placeholder="Особые пожелания"></textarea>
-<button type="submit">Отправить 🐾</button>
+<form action="https://formspree.io/f/mrbykzqp" method="POST">
+  <label>Имя владельца:
+    <input type="text" name="name" placeholder="Ваше имя" required>
+  </label>
+  <label>Email:
+    <input type="email" name="email" placeholder="Ваш email" required>
+  </label>
+  <label>Вид и порода животного:
+    <input type="text" name="pet" placeholder="Например: кот, собака" required>
+  </label>
+  <label>Даты передержки:
+    <input type="text" name="dates" placeholder="например: 01.10-07.10" required>
+  </label>
+  <label>Особые пожелания:
+    <textarea name="message" placeholder="Например: кормление по графику"></textarea>
+  </label>
+  <button type="submit">Отправить 🐾</button>
 </form>
 </section>
 
