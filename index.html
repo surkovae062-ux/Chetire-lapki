@@ -1,25 +1,35 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Приют для животных 'Четыре Лапки'. Передержка собак, кошек и мелких животных в Москве. Фотоотчёты, выгул и забота.">
-    <meta name="keywords" content="приют для животных, передержка собак, передержка кошек, питомцы, Москва">
-    <meta name="robots" content="index, follow">
-    <title>Четыре Лапки – передержка животных в Москве</title>
+    <meta name="google-site-verification" content="ac0468a636815067" />
+    <title>Приют «Четыре Лапки»</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Верхний блок с телефоном -->
+    <!-- Навигация -->
     <header>
-        <div class="top-bar">
-            <a href="tel:89362994600">Позвонить нам: 8 936 299 46 00</a>
-        </div>
-        <h1>Четыре Лапки</h1>
+        <div class="logo">Четыре Лапки</div>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="tel:89362994600" class="phone">Позвонить нам: 8 936 299 46 00</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Галерея животных в виде сетки -->
-    <section id="grid-gallery">
+    <!-- О нас -->
+    <section id="about">
+        <h1>В нашем уютном приюте</h1>
+        <p>Мы заботимся о каждом животном и ищем им любящую семью.</p>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery">
         <h2>Наши питомцы</h2>
         <div class="grid">
             <img src="https://github.com/user-attachments/assets/096b4d0d-7fd2-47f3-83b5-56a2e06faffc" alt="Собачка у компа">
@@ -28,31 +38,25 @@
             <img src="https://github.com/user-attachments/assets/a6aa8cbb-aa65-490f-8f2f-cf5269482619" alt="Кот">
             <img src="https://github.com/user-attachments/assets/5da5ed90-8e3e-4d69-8d0e-c05e10d5fa86" alt="Овчарка">
             <img src="https://github.com/user-attachments/assets/18b5762c-efc2-485f-9f13-e543a524bc7f" alt="Овчарка с котом">
+            <!-- Добавь сюда остальные изображения по аналогии -->
         </div>
     </section>
 
-    <!-- Галерея внизу (обычные картинки) -->
-    <section id="gallery">
-        <h2>Дополнительные фото</h2>
-        <img src="https://github.com/user-attachments/assets/6992dbd3-1b02-4c49-82d9-7b4e20c0d536" alt="Дача">
-        <img src="https://github.com/user-attachments/assets/7d9b9514-2589-4a87-a6d5-5af6e7c526bc" alt="Гонщик">
-        <img src="https://github.com/user-attachments/assets/d3a1a257-000c-45e5-b830-66cb29777eef" alt="Симбой">
-        <img src="https://github.com/user-attachments/assets/45a7af0d-c9b7-42ef-9bc7-6ad76d7e18e9" alt="Боня">
-        <img src="https://github.com/user-attachments/assets/6f837f47-9b20-4b76-9f53-7f80491d0368" alt="Боня 2">
-        <img src="https://github.com/user-attachments/assets/4bba8859-e3fb-4647-aebc-f444e05997c3" alt="Гонщик 2">
-        <img src="https://github.com/user-attachments/assets/df7e0c2c-bd4b-4adc-b3c9-1cf8679644a3" alt="Кролик">
-        <img src="https://github.com/user-attachments/assets/18b5762c-efc2-485f-9f13-e543a524bc7f" alt="Счастливый котёнок">
-    </section>
-
-    <!-- Форма обратной связи -->
-    <section id="form">
-        <h2>Оставьте заявку</h2>
-        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+    <!-- Контакты -->
+    <section id="contact">
+        <h2>Связаться с нами</h2>
+        <form action="https://formsubmit.co/ваш-email" method="POST">
             <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
-            <input type="email" name="email" placeholder="Ваш Email" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
             <button type="submit">Отправить</button>
         </form>
     </section>
+
+    <footer>
+        <p>© 2025 Приют «Четыре Лапки». Все права защищены.</p>
+    </footer>
+
 </body>
 </html>
