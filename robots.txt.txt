@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://surkovae062-ux.github.io/Chetire-lapki/sitemap.xml
